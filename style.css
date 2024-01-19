@@ -1,6 +1,6 @@
 /* general styling */
 :root {
-    --smaller: .75;
+    --smaller: 1;
   }
   
   * {
@@ -13,45 +13,56 @@
     height: 100%;
     margin: 0;
   }
-  
-  body {
-    align-items: center;
-    background-color: #ffd54f;
-    display: flex;
-    font-family: -apple-system, 
-      BlinkMacSystemFont, 
-      "Segoe UI", 
-      Roboto, 
-      Oxygen-Sans, 
-      Ubuntu, 
-      Cantarell, 
-      "Helvetica Neue", 
-      sans-serif;
+
+  @font-face {
+    font-family: nasalization;
+    src: url(nasalization-rg.otf);
   }
   
+  body {
+    background-image: url(null1000yardstare.png);
+    background-color: #454545;
+    background-size: 40vh;
+    background-position: absolute;
+    background-repeat: repeat;
+    position: relative;
+    align-items: center;
+    display: flex;
+    font-family: nasalization;
+  }
+
+
+  
   .container {
-    color: #333;
+    color: #ffffff;
+
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
     margin: 0 auto;
     text-align: center;
   }
   
   h1 {
     font-weight: normal;
+    font-size: 7em;
     letter-spacing: .125rem;
     text-transform: uppercase;
   }
   
   li {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 3em;
     list-style-type: none;
-    padding: 1em;
+    padding: 0.5em;
     text-transform: uppercase;
   }
   
   li span {
     display: block;
-    font-size: 4.5rem;
+    font-size: 7rem;
   }
   
   .emoji {
