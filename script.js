@@ -8,7 +8,7 @@
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
-        dayMonth = "09/27/",
+        dayMonth = "09/29/",
         twoyearend = dayMonth + 2024;
     
     today = mm + "/" + dd + "/" + yyyy;
