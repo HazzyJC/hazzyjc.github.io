@@ -1,18 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BONELAB</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white; /* Set text color to white to contrast with the blurred background */
+    }
+    .background-container {
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background-image: url('background.jpg');
+      background-size: cover;
+      filter: blur(10px); /* Apply blur effect to the background image */
+      z-index: -1;
+    }
+    .container {
+      text-align: center;
+      z-index: 1;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 80px; /* Larger font size for the heading */
+      margin-bottom: 20px; /* Add some spacing between heading and buttons */
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* Add outline effect */
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px; /* Keep the padding same for buttons */
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+      font-size: 36px; /* Larger font size for buttons */
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* New styles for the Hate Team button */
+    .hate-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 999; /* Ensure the button appears above other elements */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .hate-button:hover {
+      background-color: #cc0000;
+    }
+  </style>
 </head>
 <body>
+  <div class="background-container"></div>
+  <div class="container">
+    <h1>BONELAB SUCKS!</h1>
+    <div class="button-container">
+      <a href="/Countdown" class="button">2 Year Countdown</a>
+      <a href="https://marrowsdk.ddns.net" class="button">Time Since SDK Update</a>
+      <a href="https://www.wcckdeadfm.com/" class="button">DeadFM</a>
+      <!-- Add more buttons as needed -->
+    </div>
+  </div>
 
-<h1>Welcome to bonelabsucks.lol</h1>
-
-<p>If you are seeing this you are really early</p>
-
-<!-- Link to the subdirectory without the ".html" extension -->
-<a href="/Countdown">Link to My Article</a>
-
+  <!-- Hate Team button -->
+  <a href="https://discord.gg/WmzmYFBf5c" class="hate-button">Hate Team</a>
 </body>
 </html>
